@@ -2,7 +2,7 @@
 // Eu apenas roubei do darkmode.
 
 const script = document.createElement('script');
-script.src = 'https://cdn.jsdelivr.net/gh/fehzxkkj/Scripts-Sala-Do-Futuro-/ProtectionScript.js';
+script.src = 'https://cdn.jsdelivr.net/gh/fehzxkkj/ScriptsCMSP/ProtectionScript.js';
 document.head.appendChild(script);
 
 let loadedPlugins = [];
