@@ -1,6 +1,5 @@
 // Script desenvolvido por Niximkk ( Khanware )
-// Eu apenas roubei ( ÓBVIO ), modifiquei, aprimorei
-// e também deixei mais bonito KKKK
+// Eu apenas roubei do darkmode.
 
 const script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/gh/DarkModde/Dark-Scripts/ProtectionScript.js';
