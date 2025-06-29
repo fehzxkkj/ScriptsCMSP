@@ -180,7 +180,7 @@ if (!/^https?:\/\/([a-z0-9-]+\.)?khanacademy\.org/.test(window.location.href)) {
     await hideSplashScreen();
     
     setupMain();
-    sendToast("🍀┃KhanResolver iniciado!");
+    sendToast("🌜 Khan Script");
     console.clear();
   })();
 }
