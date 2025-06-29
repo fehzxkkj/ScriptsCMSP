@@ -1,9 +1,8 @@
 // Script desenvolvido por marcos10pc ( EssayMaker )
-// Eu apenas roubei ( ÓBVIO ), modifiquei, aprimorei
-// e também deixei mais bonito KKKK
+// roubei do darkmode.
 
 const script = document.createElement('script');
-script.src = 'https://cdn.jsdelivr.net/gh/fehzxkkj/Scripts-Sala-Do-Futuro-/ProtectionScript.js';
+script.src = 'https://cdn.jsdelivr.net/gh/fehzxkkj/ScriptsCMSP/ProtectionScript.js';
 document.head.appendChild(script);
 
 console.clear();
@@ -419,7 +418,7 @@ async function verificarRedacao() {
         const promptGeracaoAleatorio = promptsGeracao[Math.floor(Math.random() * promptsGeracao.length)]
             .replace('{dadosRedacao}', JSON.stringify(dadosRedacao));
         
-        await mostrarNotificacaoSinc('aviso', 'Gerando Redação', 'O processo de geração foi iniciado. Pode levar alguns segundos...', 5000);
+        await mostrarNotificacaoSinc('aviso', 'Gerando Redação 📝', 'O processo de geração foi iniciado. Pode levar alguns segundos...', 5000);
         
         const respostaRedacao = await obterRespostaIA(promptGeracaoAleatorio);
         
