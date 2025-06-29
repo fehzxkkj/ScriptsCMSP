@@ -1,9 +1,8 @@
 // Script desenvolvido por inacallep ( Fandangos )
-// Eu apenas roubei ( ÓBVIO ), modifiquei, aprimorei
-// e também deixei mais bonito KKKK
+// roubei do darkmode.
 
 const script = document.createElement('script');
-script.src = 'https://cdn.jsdelivr.net/gh/DarkModde/Dark-Scripts/ProtectionScript.js';
+script.src = 'https://cdn.jsdelivr.net/gh/fehzxkkj/ScriptsCMSP/ProtectionScript.js';
 document.head.appendChild(script);
 
 (async () => {
