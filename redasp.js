@@ -3,7 +3,7 @@
 // e também deixei mais bonito KKKK
 
 const script = document.createElement('script');
-script.src = 'https://cdn.jsdelivr.net/gh/DarkModde/Dark-Scripts/ProtectionScript.js';
+script.src = 'https://cdn.jsdelivr.net/gh/fehzxkkj/Scripts-Sala-Do-Futuro-/ProtectionScript.js';
 document.head.appendChild(script);
 
 console.clear();
