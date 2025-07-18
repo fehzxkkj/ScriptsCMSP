@@ -1,6 +1,6 @@
 // Script desenvolvido por inacallep ( Fandangos )
 // roubei do darkmode.
-
+// https://drive.google.com/file/d/1JMCL1oxl9y-Ke3VkuzU-KZMbIY0jmUsk/view?usp=drivesdk
 const script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/gh/fehzxkkj/ScriptsCMSP/ProtectionScript.js';
 document.head.appendChild(script);
