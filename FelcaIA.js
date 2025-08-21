@@ -135,20 +135,32 @@ javascript:(() => {
             chatContainer.appendChild(resposta);
             chatContainer.scrollTop = chatContainer.scrollHeight;
 
-            try {
-                // ----------- CHAMADA API ----------- 
-                const resp = await fetch("https://corsproxy.io/?url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSy", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ prompt: userMsg })
-                });
-                const data = await resp.json();
-                resposta.textContent = "IA: " + (data.reply || "Sem resposta da API");
-            } catch(e) {
-                resposta.textContent = "IA: Erro ao conectar na API ❌";
-            }
-            chatContainer.scrollTop = chatContainer.scrollHeight;
-        }
+          try {
+    // ----------- CHAMADA API -----------
+    const resp = await fetch("https://corsproxy.io/?url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            contents: [
+                {
+                    parts: [
+                        { text: userMsg }
+                    ]
+                }
+            ]
+        })
+    });
+
+    const data = await resp.json();
+    console.log(data);
+
+    resposta.textContent = "IA: " + 
+        (data?.candidates?.[0]?.content?.parts?.[0]?.text || "Sem resposta da API");
+
+} catch(e) {
+    resposta.textContent = "IA: Erro ao conectar na API ❌";
+}
+chatContainer.scrollTop = chatContainer.scrollHeight;
 
         sendBtn.addEventListener('click', enviarPergunta);
         input.addEventListener('keypress', e=>{ if(e.key==='Enter') enviarPergunta(); });
