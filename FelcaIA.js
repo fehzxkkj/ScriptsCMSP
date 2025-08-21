@@ -98,7 +98,7 @@ javascript:(() => {
             chatContainer.scrollTop = chatContainer.scrollHeight;
 
             try {
-    const resp = await fetch("https://corsproxy.io/?url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyXXXXXX", {
+    const resp = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyBwEiziXQ79LP7IKq93pmL", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
