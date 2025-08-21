@@ -7,7 +7,7 @@
         const CREDITS = "by hackermoon";
         const GEMINI_API_KEY = "AIzaSyBwEiziXQ79LP7IKq93pmLM8b3qnwXn6bQ";
         const MODEL_NAME = 'gemini-1.5-flash-latest';
-        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${GEMINI_API_KEY}`;
+        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyBwEiziXQ79LP7IKq93pmLM8b3qnwXn6bQ`;
         const MAX_RETRIES = 2;
         const TOAST_DURATION = 3500;
 
