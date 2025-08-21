@@ -98,24 +98,26 @@ javascript:(() => {
             chatContainer.scrollTop = chatContainer.scrollHeight;
 
             try {
-                const resp = await fetch("https://corsproxy.io/?url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSy", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                        contents: [
-                            { parts: [{ text: userMsg }] }
-                        ]
-                    })
-                });
+    const resp = await fetch("https://corsproxy.io/?url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyXXXXXX", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            contents: [
+                {
+                    parts: [
+                        { text: userMsg }
+                    ]
+                }
+            ]
+        })
+    });
 
-                const data = await resp.json();
-                console.log(data);
+    const data = await resp.json();
+    const respostaIA = data?.candidates?.[0]?.content?.parts?.[0]?.text || "Sem resposta da API";
+    resposta.textContent = "IA: " + respostaIA;
 
-                resposta.textContent = "IA: " + 
-                    (data?.candidates?.[0]?.content?.parts?.[0]?.text || "Sem resposta da API");
-
-            } catch(e) {
-                resposta.textContent = "IA: Erro ao conectar na API ❌";
+} catch (e) {
+    resposta.textContent = "IA: Erro ao conectar na API ❌";
             }
 
             chatContainer.scrollTop = chatContainer.scrollHeight;
