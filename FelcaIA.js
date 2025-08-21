@@ -137,7 +137,7 @@ javascript:(() => {
 
             try {
                 // ----------- CHAMADA API ----------- 
-                const resp = await fetch("SUA_API_AQUI", {
+                const resp = await fetch("https://corsproxy.io/?url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSy", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ prompt: userMsg })
