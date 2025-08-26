@@ -371,7 +371,7 @@ function fecharNotificacao(notificacao) {
 
 async function obterRespostaIA(promptTexto) {
     try {
-        const resposta = await fetch("https://corsproxy.io/?url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDDauPWG3xlm6QXkGvt0ZmFS9jcNnpS0ps", {
+        const resposta = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBY588hwwyP5NpGgcxN0jSE5r4V6ykH6jg", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
