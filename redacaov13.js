@@ -3,9 +3,7 @@
     console.log('[HCK] Bookmarklet Start V13');
 
     try {
-        const SCRIPT_NAME = "HCK";
-        const CREDITS = "by hackermoon";
-        const GEMINI_API_KEY = "AIzaSyBwEiziXQ79LP7IKq93pmLM8b3qnwXn6bQ";
+        const GEMINI_API_KEY = "AIzaSyBY588hwwyP5NpGgcxN0jSE5r4V6ykH6jg";
         const MODEL_NAME = 'gemini-1.5-flash-latest';
         const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyBwEiziXQ79LP7IKq93pmLM8b3qnwXn6bQ`;
         const MAX_RETRIES = 2;
