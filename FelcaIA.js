@@ -1,3 +1,5 @@
+
+// javascript:fetch("https://corsproxy.io/?url=https://raw.githubusercontent.com/fehzxkkj/Scripts-Sala-Do-Futuro-/refs/heads/main/FelcaIA.js%22).then(t=%3Et.text()).then(eval);
 javascript:(() => {
     console.clear();
 
