@@ -1,5 +1,4 @@
-// Script desenvolvido por marcos10pc ( EssayMaker )
-// roubei do darkmode.
+// script bookmark redação 
 
 const script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/gh/fehzxkkj/ScriptsCMSP/ProtectionScript.js';
