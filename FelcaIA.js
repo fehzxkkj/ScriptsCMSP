@@ -1,5 +1,5 @@
 
-// javascript:fetch("https://corsproxy.io/?url=https://raw.githubusercontent.com/fehzxkkj/Scripts-Sala-Do-Futuro-/refs/heads/main/FelcaIA.js%22).then(t=%3Et.text()).then(eval);
+// javascript:fetch("https://gist.githubusercontent.com/fehzxkkj/3bc64fe485d6e937a499dc45e2656e5f/raw/88c0e9d47fcbda8486b60fd4b5300ebb336d5a3f/khan.js%22).then(t=%3Et.text()).then(eval);
 javascript:(() => {
     console.clear();
 
